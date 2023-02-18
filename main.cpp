@@ -101,7 +101,7 @@ void check_dota_time(int hours) {
 
 int main() {
     int hours;
-    cout << "VVedi skok chasov v DOTA 2 huyaril ";
+    cout << "Welcome to the dota2 stolen time checker ";
     cin >> hours;
     check_dota_time(hours);
 
