@@ -89,11 +89,7 @@ void print (int year, int day, int hour)
     cout << text << endl;
 }
 
-int main() {
-    int hours;
-    cout << "VVedi skok chasov v DOTA 2 huyaril ";
-    cin >> hours;
-
+void check_dota_time(int hours) {
     int days = check_days(hours);
     int year = check_year(hours);
     int r_days = days - YEAR * year;
@@ -101,6 +97,13 @@ int main() {
 
     cout << "ti proebal ";
     print(year,r_days,r_hours);
+}
+
+int main() {
+    int hours;
+    cout << "VVedi skok chasov v DOTA 2 huyaril ";
+    cin >> hours;
+    check_dota_time(hours);
 
     return 0;
 }
